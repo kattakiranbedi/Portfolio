@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Katta Kiran Bedi — Frontend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- SCROLL PROGRESS -->
+  <div id="scroll-progress"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo"><span>KK</span>B</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div id="particles"></div>
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-orb orb-3"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for Freelance &amp; Full-time
+      </div>
+      <h1>Katta<br /><span class="gradient-text">Kiran Bedi</span></h1>
+      <p class="hero-role">
+        <span id="typewriter"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-sub">Building scalable, pixel-perfect web experiences with Angular expertise and a passion for clean, performant UIs.</p>
+      <div class="hero-meta">
+        <span><svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Hyderabad, India</span>
+        <span><svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M20 6h-2.18c.07-.44.18-.88.18-1.34C18 2.99 16.04 1 13.66 1c-1.3 0-2.51.56-3.36 1.45L10 2.76l-.3-.31C8.85 1.56 7.64 1 6.34 1 3.96 1 2 2.99 2 5.34c0 .46.11.9.18 1.34H0v15h24V6h-4zm-7.97 13H4V8h8.03v11zm7.97 0h-6V8h6v11z"/></svg> 4+ Years Experience</span>
+        <span><svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg> github.com/kattakiranbedi</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+          View Projects
+        </a>
+        <a href="mailto:kattakiranbedi@gmail.com" class="btn btn-outline">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          Hire Me
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label purple">About Me</span>
+        <h2>Professional <span class="gradient-text">Summary</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>Results-driven Frontend Developer with <strong>3+ years of hands-on experience</strong> in Angular, TypeScript, JavaScript, HTML, Bootstrap, CSS, and WordPress. Proven track record of building reusable UI components, responsive layouts, and seamless API integrations in fast-paced startup environments.</p>
+          <p>Skilled in RxJS, forms, routing, validations, and unit testing. Experienced in collaborating with backend and content teams for faster platform rollouts and optimizing application performance using lazy loading and efficient component structures.</p>
+          <p>Passionate about translating design mockups into elegant, performant web interfaces that users love.</p>
+          <div class="about-chips">
+            <span class="chip chip-purple">Angular Expert</span>
+            <span class="chip chip-cyan">API Integration</span>
+            <span class="chip chip-pink">Responsive UI</span>
+            <span class="chip chip-green">Performance Opt.</span>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card reveal stagger-1">
+            <div class="stat-icon">🚀</div>
+            <span class="stat-number" data-target="4">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-card reveal stagger-2">
+            <div class="stat-icon">📦</div>
+            <span class="stat-number" data-target="3">0</span>
+            <span class="stat-label">Products Shipped</span>
+          </div>
+          <div class="stat-card reveal stagger-3">
+            <div class="stat-icon">⚡</div>
+            <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Tech Skills</span>
+          </div>
+          <div class="stat-card reveal stagger-4">
+            <div class="stat-icon">🎓</div>
+            <span class="stat-text">MCA</span>
+            <span class="stat-label">Osmania University</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label cyan">Tech Stack</span>
+        <h2>Technical <span class="gradient-text">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category reveal stagger-1">
+          <div class="skill-cat-header purple">
+            <span class="skill-cat-icon">⚛️</span>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill-purple">Angular</span>
+            <span class="pill pill-purple">TypeScript</span>
+            <span class="pill pill-purple">JavaScript (ES6+)</span>
+            <span class="pill pill-cyan">HTML5</span>
+            <span class="pill pill-cyan">CSS3</span>
+            <span class="pill pill-pink">RxJS</span>
+            <span class="pill pill-pink">Bootstrap</span>
+          </div>
+        </div>
+        <div class="skill-category reveal stagger-2">
+          <div class="skill-cat-header cyan">
+            <span class="skill-cat-icon">🌐</span>
+            <h3>CMS & Frameworks</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill-cyan">WordPress</span>
+            <span class="pill pill-purple">Angular CLI</span>
+          </div>
+        </div>
+        <div class="skill-category reveal stagger-3">
+          <div class="skill-cat-header pink">
+            <span class="skill-cat-icon">🛠️</span>
+            <h3>Tools</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill-pink">Git</span>
+            <span class="pill pill-pink">Postman</span>
+            <span class="pill pill-green">REST APIs</span>
+            <span class="pill pill-green">VS Code</span>
+          </div>
+        </div>
+        <div class="skill-category reveal stagger-4">
+          <div class="skill-cat-header green">
+            <span class="skill-cat-icon">💻</span>
+            <h3>Environments</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill-green">Windows</span>
+            <span class="pill pill-green">Linux</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label pink">Portfolio</span>
+        <h2>Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal stagger-1" data-color="purple">
+          <div class="card-glow"></div>
+          <div class="project-header">
+            <div class="project-number gradient-text">01</div>
+            <div class="project-tags">
+              <span class="tag tag-purple">EdTech</span>
+              <span class="tag tag-cyan">Angular</span>
+              <span class="tag tag-pink">Scalable</span>
+            </div>
+          </div>
+          <h3>E-Learning Web Application</h3>
+          <p class="project-overview">A scalable online learning platform providing students access to digital study materials, video lectures, and online assessments with instructor course management.</p>
+          <div class="project-section">
+            <h4>My Role</h4>
+            <ul>
+              <li>Developed scalable, responsive interface using Angular, HTML &amp; CSS.</li>
+              <li>Collaborated with backend developers for smooth data flow and consistent UI/UX.</li>
+              <li>Integrated REST APIs for course materials, videos and assessment data.</li>
+            </ul>
+          </div>
+          <div class="project-section">
+            <h4>Impact</h4>
+            <ul class="impact-list">
+              <li>Delivered fully functional platform enabling seamless access to digital resources.</li>
+              <li>Improved student engagement via interactive assessments and progress tracking.</li>
+              <li>Achieved responsive design for consistent cross-device experience.</li>
+            </ul>
+          </div>
+          <div class="project-tech">
+            <span class="tech-badge">Angular</span>
+            <span class="tech-badge">HTML5</span>
+            <span class="tech-badge">CSS3</span>
+            <span class="tech-badge">WordPress</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal stagger-2" data-color="cyan">
+          <div class="card-glow"></div>
+          <div class="project-header">
+            <div class="project-number gradient-text-cyan">02</div>
+            <div class="project-tags">
+              <span class="tag tag-cyan">EdTech</span>
+              <span class="tag tag-pink">Gamification</span>
+              <span class="tag tag-green">Language</span>
+            </div>
+          </div>
+          <h3>Bharath English Test (BET)</h3>
+          <p class="project-overview">A gamified English proficiency platform for improving vocabulary, grammar, reading and listening skills through interactive modules and level-based progression.</p>
+          <div class="project-section">
+            <h4>My Role</h4>
+            <ul>
+              <li>Designed and developed interactive, gamified English learning platform.</li>
+              <li>Collaborated with backend teams for scalable, user-centric features.</li>
+              <li>Ensured consistent UI/UX across the entire application.</li>
+            </ul>
+          </div>
+          <div class="project-section">
+            <h4>Key Achievements</h4>
+            <ul class="impact-list">
+              <li>Enhanced user engagement through gamified modules and interactive assessments.</li>
+              <li>Improved proficiency tracking with level-based progression system.</li>
+              <li>Delivered scalable platform supporting multiple language skill areas.</li>
+            </ul>
+          </div>
+          <div class="project-tech">
+            <span class="tech-badge">Angular</span>
+            <span class="tech-badge">HTML5</span>
+            <span class="tech-badge">CSS3</span>
+            <span class="tech-badge">RxJS</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal stagger-3" data-color="pink">
+          <div class="card-glow"></div>
+          <div class="project-header">
+            <div class="project-number gradient-text-pink">03</div>
+            <div class="project-tags">
+              <span class="tag tag-pink">E-Commerce</span>
+              <span class="tag tag-purple">Multi-vendor</span>
+              <span class="tag tag-green">Angular</span>
+            </div>
+          </div>
+          <h3>Vastraloop — E-Commerce</h3>
+          <p class="project-overview">A multi-vendor e-commerce platform where users act as both buyers and sellers — enabling product listing, management and seamless purchasing flows.</p>
+          <div class="project-section">
+            <h4>My Role</h4>
+            <ul>
+              <li>Developed scalable, responsive platform interface using Angular, HTML &amp; CSS.</li>
+              <li>Implemented dynamic product management for sellers to add and update listings.</li>
+              <li>Collaborated with backend developers for smooth data flow and UI/UX.</li>
+            </ul>
+          </div>
+          <div class="project-section">
+            <h4>Impact</h4>
+            <ul class="impact-list">
+              <li>Enabled seamless multi-vendor operations with efficient product management.</li>
+              <li>Improved buyer experience with intuitive browsing and purchasing flows.</li>
+              <li>Delivered responsive design consistent across all devices.</li>
+            </ul>
+          </div>
+          <div class="project-tech">
+            <span class="tech-badge">Angular</span>
+            <span class="tech-badge">HTML5</span>
+            <span class="tech-badge">CSS3</span>
+            <span class="tech-badge">TypeScript</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label green">Work History</span>
+        <h2>Professional <span class="gradient-text">Experience</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">
+            <div class="dot-ring"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Software Development Engineer</h3>
+                <span class="company">WEXL AI — Hyderabad, India</span>
+              </div>
+              <span class="timeline-date">June 2020 – Present</span>
+            </div>
+            <div class="exp-grid">
+              <div class="exp-item">
+                <span class="exp-icon purple-bg">⚛️</span>
+                <span>Developed reusable Angular components and optimized DOM interactions using TypeScript.</span>
+              </div>
+              <div class="exp-item">
+                <span class="exp-icon cyan-bg">🔗</span>
+                <span>Integrated REST APIs using Angular services to improve UI performance.</span>
+              </div>
+              <div class="exp-item">
+                <span class="exp-icon pink-bg">🐛</span>
+                <span>Resolved critical production issues with quick root-cause fixes.</span>
+              </div>
+              <div class="exp-item">
+                <span class="exp-icon green-bg">✅</span>
+                <span>Ensured unit tests passed during feature development and releases.</span>
+              </div>
+              <div class="exp-item">
+                <span class="exp-icon purple-bg">🤝</span>
+                <span>Collaborated with backend and content teams for faster platform rollouts.</span>
+              </div>
+              <div class="exp-item">
+                <span class="exp-icon cyan-bg">⚡</span>
+                <span>Optimized performance using lazy loading and efficient component structure.</span>
+              </div>
+              <div class="exp-item">
+                <span class="exp-icon pink-bg">📱</span>
+                <span>Built responsive UI layouts using HTML5, CSS3, and Bootstrap.</span>
+              </div>
+              <div class="exp-item">
+                <span class="exp-icon green-bg">🎨</span>
+                <span>Translated design mockups into functional web interfaces with UI/UX designers.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label purple">Academic</span>
+        <h2>Education <span class="gradient-text">Background</span></h2>
+      </div>
+      <div class="education-grid">
+        <div class="edu-card reveal stagger-1">
+          <div class="edu-badge purple-grad">MCA</div>
+          <div class="edu-details">
+            <h3>Master of Computer Applications</h3>
+            <p class="edu-institute">Osmania University, Hyderabad</p>
+            <span class="edu-year">Class of 2010</span>
+          </div>
+          <div class="edu-decoration"></div>
+        </div>
+        <div class="edu-card reveal stagger-2">
+          <div class="edu-badge cyan-grad">BSc</div>
+          <div class="edu-details">
+            <h3>Bachelor's Degree</h3>
+            <p class="edu-institute">RKLK Degree &amp; P.G College, Osmania University</p>
+            <span class="edu-year">Class of 2006</span>
+          </div>
+          <div class="edu-decoration"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label light">Let's Connect</span>
+        <h2 class="contact-heading">Ready to Build<br /><span class="gradient-text-light">Something Great?</span></h2>
+      </div>
+      <div class="contact-wrapper">
+        <p class="contact-intro">I thrive at the intersection of design precision and technical execution. Whether building scalable platforms or crafting interactive experiences — I bring Angular expertise, clean code, and a collaborative spirit to every project.</p>
+        <div class="contact-cards">
+          <a href="mailto:kattakiranbedi@gmail.com" class="contact-card" data-color="purple">
+            <div class="contact-card-glow"></div>
+            <span class="contact-icon">✉️</span>
+            <span class="contact-type">Email</span>
+            <span class="contact-value">kattakiranbedi@gmail.com</span>
+          </a>
+          <a href="tel:+919966062583" class="contact-card" data-color="cyan">
+            <div class="contact-card-glow"></div>
+            <span class="contact-icon">📞</span>
+            <span class="contact-type">Phone</span>
+            <span class="contact-value">+91-9966062583</span>
+          </a>
+          <a href="https://github.com/kattakiranbedi/" target="_blank" rel="noopener" class="contact-card" data-color="pink">
+            <div class="contact-card-glow"></div>
+            <span class="contact-icon">💻</span>
+            <span class="contact-type">GitHub</span>
+            <span class="contact-value">github.com/kattakiranbedi</span>
+          </a>
+          <div class="contact-card no-link" data-color="green">
+            <div class="contact-card-glow"></div>
+            <span class="contact-icon">📍</span>
+            <span class="contact-type">Location</span>
+            <span class="contact-value">Hyderabad, India</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">KKB</span>
+        <p>© 2026 Katta Kiran Bedi · Software Engineer · Hyderabad, India</p>
+        <p class="footer-sub">Designed &amp; built with HTML, CSS &amp; JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ── Scroll progress ── */
+    const progress = document.getElementById('scroll-progress');
+    window.addEventListener('scroll', () => {
+      const pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+      progress.style.width = pct + '%';
+    });
+
+    /* ── Sticky nav ── */
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    /* ── Mobile nav ── */
+    const navToggle = document.getElementById('navToggle');
+    const navLinks  = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      navToggle.classList.toggle('active');
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        navToggle.classList.remove('active');
+      });
+    });
+
+    /* ── Active nav link ── */
+    const sections = document.querySelectorAll('section[id]');
+    const navItems = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.id; });
+      navItems.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
+    });
+
+    /* ── Particles ── */
+    const particleContainer = document.getElementById('particles');
+    for (let i = 0; i < 55; i++) {
+      const p = document.createElement('span');
+      p.className = 'particle';
+      const size = Math.random() * 4 + 1;
+      p.style.cssText = `
+        width:${size}px; height:${size}px;
+        left:${Math.random() * 100}%;
+        top:${Math.random() * 100}%;
+        animation-delay:${Math.random() * 6}s;
+        animation-duration:${Math.random() * 10 + 8}s;
+        opacity:${Math.random() * 0.6 + 0.1};
+      `;
+      particleContainer.appendChild(p);
+    }
+
+    /* ── Typewriter ── */
+    const roles = ['Angular Developer', 'Frontend Engineer', 'UI Specialist', 'WordPress Developer', 'Web App Builder'];
+    let roleIdx = 0, charIdx = 0, deleting = false;
+    const tw = document.getElementById('typewriter');
+    function type() {
+      const word = roles[roleIdx];
+      if (!deleting) {
+        tw.textContent = word.slice(0, ++charIdx);
+        if (charIdx === word.length) { deleting = true; return setTimeout(type, 1800); }
+      } else {
+        tw.textContent = word.slice(0, --charIdx);
+        if (charIdx === 0) { deleting = false; roleIdx = (roleIdx + 1) % roles.length; }
+      }
+      setTimeout(type, deleting ? 60 : 95);
+    }
+    type();
+
+    /* ── Reveal on scroll ── */
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    /* ── Count-up ── */
+    const countObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        const el = e.target;
+        const target = +el.dataset.target;
+        let start = 0;
+        const step = target / 40;
+        const timer = setInterval(() => {
+          start = Math.min(start + step, target);
+          el.textContent = Math.floor(start);
+          if (start >= target) clearInterval(timer);
+        }, 40);
+        countObserver.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.stat-number[data-target]').forEach(el => countObserver.observe(el));
+
+    /* ── Card hover tilt ── */
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const r = card.getBoundingClientRect();
+        const x = ((e.clientX - r.left) / r.width  - 0.5) * 10;
+        const y = ((e.clientY - r.top)  / r.height - 0.5) * -10;
+        card.style.transform = `perspective(800px) rotateY(${x}deg) rotateX(${y}deg) translateY(-8px)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+      });
+    });
+  </script>
+</body>
+</html>
